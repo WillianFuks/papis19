@@ -1,0 +1,7 @@
+tensorflow-transform==0.13.0
+tensorflow==1.13.1
+apache-beam[gcp]==2.11.0
+six
+flake8
+isort
+pytest

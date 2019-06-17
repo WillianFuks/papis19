@@ -1,1 +1,3 @@
-PAPIS19_RecSys_Workshop.ipynb filter=git-crypt diff=git-crypt
+introduction.ipynb filter=git-crypt diff=git-crypt
+production.ipynb filter=git-crypt diff=git-crypt
+preprocess.py filter=git-crypt diff=git-crypt
