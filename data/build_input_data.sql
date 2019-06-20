@@ -26,6 +26,7 @@ SELECT
     FROM UNNEST(hits), UNNEST(product)
     WHERE TRUE
   ) AS hits
-FROM `{project_id}.{project_id}.ga_sessions_*`
-WHERE _TABLE_SUFFIX = '{date}'
-LIMIT {nrows}
+FROM `{project_id}.{dataset_id}.ga_sessions_*`
+WHERE TRUE
+  AND _TABLE_SUFFIX BETWEEN '{init_date}' AND 'end_date'
+  AND RAND() < {threshold}
