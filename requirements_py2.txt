@@ -1,6 +1,6 @@
-tensorflow-transform==0.13.0
-tensorflow==1.13.1
-apache-beam[gcp]==2.11.0
+tensorflow-transform==0.8.0
+tensorflow==1.8
+apache-beam[gcp]==2.5.0
 six
 flake8
 isort

@@ -1,7 +1,8 @@
 SELECT 
   date,
   customer_id,
-  hits
+  --hits
+  ARRAY(SELECT AS STRUCT action AS action, productSku AS productSku FROM UNNEST(hits)) AS hits -- cheatting!
 FROM `{project_id}.papis19.dafiti_data`
 WHERE TRUE
   AND ARRAY_LENGTH(hits) > 1

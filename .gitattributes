@@ -2,3 +2,4 @@ introduction.ipynb filter=git-crypt diff=git-crypt
 production.ipynb filter=git-crypt diff=git-crypt
 serving.ipynb filter=git-crypt diff=git-crypt
 preprocess.py filter=git-crypt diff=git-crypt
+test_preprocess.py filter=git-crypt diff=git-crypt

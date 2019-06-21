@@ -8,3 +8,6 @@ isort-check:
 flake8:
 	pip install -U flake8
 	flake8 transform
+
+test:
+	pytest -p no:warnings

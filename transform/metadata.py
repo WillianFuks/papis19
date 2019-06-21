@@ -13,6 +13,10 @@
 # limitations under the License.
 
 
+import tensorflow as tf
+from tensorflow_transform.tf_metadata import dataset_metadata, dataset_schema
+
+
 RAW_DATA_SCHEMA = {
     'customer_id': dataset_schema.ColumnSchema(
         tf.string,
@@ -37,7 +41,7 @@ RAW_DATA_METADATA = dataset_metadata.DatasetMetadata(
 
 OUTPUT_TRAIN_SCHEMA = {
     'customer_id': dataset_schema.ColumnSchema(
-        tf.string,
+        tf.int64,
         [],
         dataset_schema.FixedColumnRepresentation()
     ),
@@ -55,7 +59,7 @@ OUTPUT_TRAIN_SCHEMA = {
 
 OUTPUT_TEST_SCHEMA = {
     'customer_id': dataset_schema.ColumnSchema(
-        tf.string,
+        tf.int64,
         [],
         dataset_schema.FixedColumnRepresentation()
     ),
