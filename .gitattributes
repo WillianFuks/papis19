@@ -3,3 +3,5 @@ preprocess.ipynb filter=git-crypt diff=git-crypt
 model.ipynb filter=git-crypt diff=git-crypt
 preprocess.py filter=git-crypt diff=git-crypt
 test_preprocess.py filter=git-crypt diff=git-crypt
+model.py filter=git-crypt diff=git-crypt
+trainer.py filter=git-crypt diff=git-crypt
