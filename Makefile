@@ -10,4 +10,4 @@ flake8:
 	flake8 transform
 
 test:
-	export PYTHONPATH=./transform && pytest tests/unit/transform/test_preprocess.py -p no:warnings
+	export PYTHONPATH=./transform && pytest tests/unit/transform/preprocess/test_preprocess.py -p no:warnings

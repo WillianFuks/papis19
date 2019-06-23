@@ -16,7 +16,7 @@
 import argparse
 import tensorflow as tf
 
-import model
+import trainer.model as model
 
 
 def parse_args():
@@ -48,23 +48,30 @@ def parse_args():
         type=str
     )
 
+    parser.add_argument(
+        '--output_filename',
+        help='where to save sim matrix.',
+        type=str
+    )
+
+    parser.add_argument(
+        '--job-dir',
+        help='main location for running the jobs results.',
+        type=str
+    )
+
     args = parser.parse_args()
     return args
 
 
 def main(args):
-    estimator = model.build_estimator()
-
-    input_fn = model.make_train_input_fn(
+    model.train_and_save(
         args.input_train_data_path,
         args.browse_score,
-        args.basket_score
+        args.basket_score,
+        args.output_filename
     )
 
-    estimator.train(
-        input_fn=input_fn
-    )        
-    
 
 if __name__ == '__main__':
     args = parse_args()
