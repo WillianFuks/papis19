@@ -5,3 +5,4 @@ preprocess.py filter=git-crypt diff=git-crypt
 test_preprocess.py filter=git-crypt diff=git-crypt
 model.py filter=git-crypt diff=git-crypt
 trainer.py filter=git-crypt diff=git-crypt
+custom_predictor.py filter=git-crypt diff=git-crypt

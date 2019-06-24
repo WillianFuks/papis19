@@ -11,3 +11,6 @@ flake8:
 
 test:
 	export PYTHONPATH=./transform && pytest tests/unit/transform/preprocess/test_preprocess.py -p no:warnings
+
+test-student:
+	export PYTHONPATH=./transform && pytest tests/unit/transform/preprocess/test_student_preprocess.py -p no:warnings

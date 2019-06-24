@@ -1,0 +1,6 @@
+tensorflow
+google-cloud-storage
+flask
+jupyter
+scipy
+gunicorn

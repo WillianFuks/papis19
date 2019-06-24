@@ -22,7 +22,6 @@ import os
 from preprocess.preprocess import run_tft_pipeline
 
 
-
 def parse_args():
         parser = argparse.ArgumentParser()
         parser.add_argument(
@@ -94,6 +93,13 @@ def parse_args():
         )
 
         parser.add_argument(
+            '--machine_type',
+            help='type of machine to run job.',
+            type=str,
+            default='n1-standard-1'
+        )
+
+        parser.add_argument(
             '--staging_location',
             help='staging location to savem beam jobs steps',
             type=str
@@ -134,15 +140,6 @@ def parse_args():
 
         parser.add_argument(
             '--output_test_filename',
-            help=(
-                'filename for where to save final test dataset. This file feeds ',
-                'the similarity matrix model creation.'
-            ),
-            type=str
-        )
-
-        parser.add_argument(
-            '--requirements_file',
             help=(
                 'filename for where to save final test dataset. This file feeds ',
                 'the similarity matrix model creation.'

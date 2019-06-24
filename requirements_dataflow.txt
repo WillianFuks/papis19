@@ -1,2 +1,0 @@
-tensorflow-transform==0.8.0
-apache-beam[gcp]==2.5.0

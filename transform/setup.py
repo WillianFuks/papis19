@@ -21,6 +21,7 @@ REQUIRED_PACKAGES = [
     'apache-beam[gcp]==2.5.0'
 ]
 
+
 setup(
     name='papis19',
     version='0.1.0',
@@ -29,4 +30,3 @@ setup(
     include_package_data=True,
     description='Dataflow Package for preprocessing Dafiti`s data.'
 )
-

@@ -11,19 +11,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-
-from setuptools import find_packages
-from setuptools import setup
-
-REQUIRED_PACKAGES = ['google-cloud-storage']
-
-
-setup(
-    name='trainer',
-    version='0.1.0',
-    install_requires=REQUIRED_PACKAGES,
-    packages=find_packages(),
-    include_package_data=True,
-    description='Builds package for ML Engine.'
-)

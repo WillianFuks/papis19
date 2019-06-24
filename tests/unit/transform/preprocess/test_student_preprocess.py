@@ -53,7 +53,8 @@ def input_args():
         tft_transform=transform_location,
         output_train_filename=temp_location + '/output_train',
         output_test_filename=temp_location + '/output_test',
-        requirements_file=''
+        requirements_file='',
+        machine_type=''
     )
     return args
 
@@ -197,4 +198,4 @@ def test_read_input_data(input_args):
     # The idea is, create a pipeline, use it in the function and create a transformation
     # that writes this data somewhere. Then, read the data and see if results are as
     # expected.
-    pass
+    assert False
