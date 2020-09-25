@@ -1,5 +1,5 @@
 tensorflow-transform==0.8.0
-tensorflow==1.8.0
+tensorflow==1.15.4
 apache-beam[gcp]==2.5.0
 six
 flake8
